@@ -1,0 +1,23 @@
+DECLARE 
+    A NUMBER;
+    B NUMBER;
+    C NUMBER;
+FUNCTION FINDMAX(X IN NUMBER,Y IN NUMBER)
+RETURN NUMBER
+IS
+    Z NUMBER;
+BEGIN
+    IF X>Y THEN
+        Z:=X;
+    ELSE
+        Z:=Y;
+    END IF;
+    RETURN Z;
+END;
+BEGIN
+    A:=20;
+    B:=30;
+    C:=FINDMAX(A,B);
+    DBMS_OUTPUT.PUT_LINE('MAXIMUM OF (20,30) : '||C);
+END;
+/
