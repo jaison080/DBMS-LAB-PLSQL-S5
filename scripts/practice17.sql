@@ -1,0 +1,2 @@
+/*Write a PL/SQL program to count number of employees in a specific department and 
+check whether this department have any vacancies or not. If any vacancies, how many vacancies are in that department.*/
