@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  oracleDb:
+    image: gvenzl/oracle-xe
+    container_name: oracle
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle-volume:/opt/oracle/oradata
+      - ./scripts:/opt/oracle/scripts
+    environment:
+      - ORACLE_PASSWORD=admin
+
+volumes:
+  oracle-volume:
